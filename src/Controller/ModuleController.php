@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class EDTController extends AbstractController
+class ModuleController extends AbstractController
 {
-    #[Route('/e/d/t', name: 'app_e_d_t')]
+    #[Route('/module', name: 'app_module')]
     public function index(): Response
     {
-        return $this->render('edt/index.html.twig', [
-            'controller_name' => 'EDTController',
+        return $this->render('module/index.html.twig', [
+            'controller_name' => 'ModuleController',
         ]);
     }
 }

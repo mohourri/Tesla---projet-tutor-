@@ -6,13 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class AbsenceControleController extends AbstractController
+class ClasseController extends AbstractController
 {
-    #[Route('/absence/controle', name: 'app_absence_controle')]
+    #[Route('/classe', name: 'app_classe')]
     public function index(): Response
     {
-        return $this->render('absence_controle/index.html.twig', [
-            'controller_name' => 'AbsenceControleController',
+        return $this->render('classe/index.html.twig', [
+            'controller_name' => 'ClasseController',
         ]);
     }
 }
